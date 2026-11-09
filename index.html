@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP Hosting — выделенные серверы</title>
+  <meta name="description" content="ESP Hosting — выделенные серверы в Токио и Франкфурте. Тишина дата-центра, мощь горы. Выберите конфигурацию и оформите заказ.">
+  <meta name="theme-color" content="#f3ede2">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <noscript>
+    <style>
+      .reveal { opacity: 1; transform: none; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="ESP Hosting — на главную">
+        <span class="brand-mark" aria-hidden="true">ESP</span>
+        <span class="brand-text">
+          <span class="brand-name">ESP Hosting</span>
+          <span class="brand-sub" lang="ja">専用サーバー</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#servers">Серверы</a>
+        <a href="#features">Принципы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+78005553535">+7 800 555-35-35</a>
+        <a class="btn btn-ghost btn-sm header-cta" href="#servers">Выбрать</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div>
+
+        <svg class="cloud cloud-a" viewBox="0 0 320 90" fill="none">
+          <path d="M8 68c14-26 44-34 64-18 8-24 42-34 66-16 14-16 44-18 58 2 22-6 42 8 48 30" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <svg class="cloud cloud-b" viewBox="0 0 320 90" fill="none">
+          <path d="M8 68c14-26 44-34 64-18 8-24 42-34 66-16 14-16 44-18 58 2 22-6 42 8 48 30" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+
+        <svg class="birds" viewBox="0 0 160 70" fill="none">
+          <path d="M6 22c7-8 14-8 21 0M38 12c6-7 12-7 18 0M72 28c8-9 16-9 24 0M112 10c6-7 12-7 18 0M130 36c7-8 14-8 21 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+
+        <div class="petals" id="petals"></div>
+      </div>
+
+      <span class="hero-vertical" aria-hidden="true">
+        <span lang="ja">専用サーバー</span>
+        <i class="hero-vertical-seal">静</i>
+      </span>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark"></span>ESP Hosting · <span lang="ja">東京</span> · с 2012 года</p>
+          <h1>Выделенные<br>серверы<br><em>с характером</em></h1>
+          <p class="lead">Тишина дата-центра, мощь горы. Ваша инфраструктура на выделенном железе в Токио и Франкфурте — без соседей, шума и компромиссов.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#servers">
+              <span>Выбрать сервер</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-text" href="#features">Почему ESP</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="hero-landscape" aria-hidden="true">
+          <div class="mist mist-a"></div>
+          <div class="mist mist-b"></div>
+
+          <svg class="mountains" viewBox="0 0 1440 520" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="ridge-far" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#8b8071"/>
+                <stop offset="1" stop-color="#6d6355"/>
+              </linearGradient>
+              <linearGradient id="ridge-mid" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#4b4237"/>
+                <stop offset="1" stop-color="#38312a"/>
+              </linearGradient>
+              <linearGradient id="ridge-near" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#28221c"/>
+                <stop offset="1" stop-color="#1a1613"/>
+              </linearGradient>
+              <linearGradient id="ridge-deep" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#16120f"/>
+                <stop offset="1" stop-color="#0f0d0b"/>
+              </linearGradient>
+            </defs>
+
+            <path fill="url(#ridge-far)" opacity=".34" d="M0 340 90 292l60 30 100-86 66 42 64-32 90 72 90-50 90 44 110-72 90 60 80-38 90 64 100-50 90 44 90-52 80 44 60-24v226H0Z"/>
+            <path fill="url(#ridge-mid)" opacity=".78" d="M0 392 110 334l80 38 90-66 80 46 90-52 90 66 90-46 100 64 100-54 90 42 90-56 90 46 100-40 90 58 90-40 60 30v208H0Z"/>
+            <path fill="url(#ridge-near)" d="M0 448 130 392l120 46 120-60 110 52 110-44 110 56 110-46 120 54 120-48 110 46 110-40 110 44 60-28v176H0Z"/>
+            <path fill="url(#ridge-deep)" d="M0 490 120 456l120 30 120-38 140 44 140-36 140 38 140-36 140 38 140-34 120 30 120-22v98H0Z"/>
+          </svg>
+        </div>
+        <div class="hero-bottom-shade" aria-hidden="true"></div>
+
+        <div class="container hero-stats-wrap">
+          <div class="hero-stats">
+            <div class="hero-stat"><b>99,99%</b><span>аптайм</span></div>
+            <div class="hero-stat"><b>10 Гбит/с</b><span>канал</span></div>
+            <div class="hero-stat"><b>24 / 7</b><span>поддержка</span></div>
+            <div class="hero-stat"><b>12 лет</b><span>тишины</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVERS ================= -->
+    <section class="section servers" id="servers">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-mark"></span><span lang="ja">専用</span> · Dedicated</p>
+          <h2>Выберите свой сервер</h2>
+          <p class="section-lead">Три конфигурации — от тихой гавани для первого проекта до дракона, что держит высокие нагрузки. Все ресурсы физически выделены только вам.</p>
+        </div>
+
+        <div class="server-grid">
+
+          <!-- KITSUNE -->
+          <article class="server-card reveal" data-plan="kitsune" style="--d:.05s">
+            <span class="card-watermark" aria-hidden="true" lang="ja">狐</span>
+            <span class="card-badge">для старта</span>
+
+            <div class="card-head">
+              <span class="card-glyph" aria-hidden="true" lang="ja">狐</span>
+            </div>
+
+            <h3 class="card-name">Kitsune <span class="card-jp" lang="ja">狐</span></h3>
+            <p class="card-desc">Тихая гавань для первого проекта, бота или личного сервиса.</p>
+
+            <div class="card-price">
+              <span class="amount">12 900</span>
+              <span class="cur">₽<small>/ мес</small></span>
+            </div>
+
+            <ul class="specs">
+              <li><span>Процессор</span><strong>4 ядра · Ryzen 9</strong></li>
+              <li><span>Память</span><strong>16 ГБ DDR5 ECC</strong></li>
+              <li><span>Диск</span><strong>2 × 512 ГБ NVMe</strong></li>
+              <li><span>Канал</span><strong>1 Гбит/с · безлимит</strong></li>
+              <li><span>Защита</span><strong>DDoS — 500 Гбит/с</strong></li>
+            </ul>
+
+            <button class="btn select-btn" type="button" data-select aria-pressed="false">
+              <span class="btn-label">Выбрать</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </button>
+
+            <span class="card-seal" aria-hidden="true" lang="ja">選</span>
+          </article>
+
+          <!-- TENGU -->
+          <article class="server-card server-card--featured reveal" data-plan="tengu" style="--d:.15s">
+            <span class="card-watermark" aria-hidden="true" lang="ja">天狗</span>
+            <span class="card-badge card-badge--accent">выбор большинства</span>
+
+            <div class="card-head">
+              <span class="card-glyph" aria-hidden="true" lang="ja">天</span>
+            </div>
+
+            <h3 class="card-name">Tengu <span class="card-jp" lang="ja">天狗</span></h3>
+            <p class="card-desc">Рабочая лошадка для продакшена, баз данных и игровых миров.</p>
+
+            <div class="card-price">
+              <span class="amount">24 900</span>
+              <span class="cur">₽<small>/ мес</small></span>
+            </div>
+
+            <ul class="specs">
+              <li><span>Процессор</span><strong>8 ядер · Ryzen 9</strong></li>
+              <li><span>Память</span><strong>32 ГБ DDR5 ECC</strong></li>
+              <li><span>Диск</span><strong>2 × 1 ТБ NVMe</strong></li>
+              <li><span>Канал</span><strong>2 Гбит/с · безлимит</strong></li>
+              <li><span>Защита</span><strong>DDoS — 1 Тбит/с</strong></li>
+            </ul>
+
+            <button class="btn select-btn" type="button" data-select aria-pressed="false">
+              <span class="btn-label">Выбрать</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </button>
+
+            <span class="card-seal" aria-hidden="true" lang="ja">選</span>
+          </article>
+
+          <!-- RYUJIN -->
+          <article class="server-card reveal" data-plan="ryujin" style="--d:.25s">
+            <span class="card-watermark" aria-hidden="true" lang="ja">龍神</span>
+            <span class="card-badge">максимум</span>
+
+            <div class="card-head">
+              <span class="card-glyph" aria-hidden="true" lang="ja">龍</span>
+            </div>
+
+            <h3 class="card-name">Ryujin <span class="card-jp" lang="ja">龍神</span></h3>
+            <p class="card-desc">Дракон для высоких нагрузок: кластеры, стриминг, вычисления.</p>
+
+            <div class="card-price">
+              <span class="amount">49 900</span>
+              <span class="cur">₽<small>/ мес</small></span>
+            </div>
+
+            <ul class="specs">
+              <li><span>Процессор</span><strong>16 ядер · EPYC</strong></li>
+              <li><span>Память</span><strong>64 ГБ DDR5 ECC</strong></li>
+              <li><span>Диск</span><strong>4 × 2 ТБ NVMe</strong></li>
+              <li><span>Канал</span><strong>10 Гбит/с · безлимит</strong></li>
+              <li><span>Защита</span><strong>DDoS — 1,5 Тбит/с</strong></li>
+            </ul>
+
+            <button class="btn select-btn" type="button" data-select aria-pressed="false">
+              <span class="btn-label">Выбрать</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </button>
+
+            <span class="card-seal" aria-hidden="true" lang="ja">選</span>
+          </article>
+
+        </div>
+
+        <p class="servers-note reveal">Все серверы физические, с выделенными ресурсами · Настройка и миграция — бесплатно · Установка за 2 часа</p>
+      </div>
+    </section>
+
+    <!-- ================= QUOTE ================= -->
+    <section class="quote-band reveal">
+      <div class="quote-watermark" aria-hidden="true" lang="ja">静</div>
+      <div class="container quote-inner">
+        <p class="quote-jp" lang="ja">静けさの中に、力がある。</p>
+        <p class="quote-ru">«В тишине — сила»</p>
+        <p class="quote-src">философия ESP Hosting</p>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="eyebrow-mark"></span><span lang="ja">心</span> · Принципы</p>
+          <h2>Спокойствие по подписке</h2>
+          <p class="section-lead">Мы убрали из хостинга всё лишнее: шум, скрытые лимиты и очереди в поддержку. Осталось только железо, которое работает.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature reveal" style="--d:.05s">
+            <span class="feature-kanji" aria-hidden="true" lang="ja">守</span>
+            <h3>Щит</h3>
+            <p>Фильтрация атак L3–L7 на 1,5 Тбит/с. Угроза гасится на границе сети и не доходит до вашего сервера.</p>
+          </article>
+          <article class="feature reveal" style="--d:.1s">
+            <span class="feature-kanji" aria-hidden="true" lang="ja">速</span>
+            <h3>Скорость</h3>
+            <p>NVMe-массивы, память DDR5 и аплинки до 10 Гбит/с. Пинг из Москвы — от 19 мс, из Токио — от 3 мс.</p>
+          </article>
+          <article class="feature reveal" style="--d:.15s">
+            <span class="feature-kanji" aria-hidden="true" lang="ja">心</span>
+            <h3>Забота</h3>
+            <p>Живая поддержка 24/7 на русском и английском. Средний ответ — 4 минуты. Без ботов и шаблонов.</p>
+          </article>
+          <article class="feature reveal" style="--d:.2s">
+            <span class="feature-kanji" aria-hidden="true" lang="ja">誠</span>
+            <h3>Честность</h3>
+            <p>Фиксированная цена, без платы за панель и скрытых лимитов трафика. Настройка и миграция — бесплатно.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer" id="contacts">
+    <div class="footer-watermark" aria-hidden="true" lang="ja">侍</div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top">
+            <span class="brand-mark" aria-hidden="true">ESP</span>
+            <span class="brand-text">
+              <span class="brand-name">ESP Hosting</span>
+              <span class="brand-sub" lang="ja">専用サーバー</span>
+            </span>
+          </a>
+          <p>Выделенные серверы в Токио и Франкфурте. Часть тишины — ваша.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Серверы</h4>
+          <a href="#servers">Kitsune · 狐</a>
+          <a href="#servers">Tengu · 天狗</a>
+          <a href="#servers">Ryujin · 龍神</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Компания</h4>
+          <a href="#features">Принципы</a>
+          <a href="#top">О нас</a>
+          <a href="#servers">Оплата</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="mailto:support@esphosting.jp">support@esphosting.jp</a>
+          <a href="tel:+78005553535">+7 800 555-35-35</a>
+          <a href="#" rel="noopener">Telegram · @esphosting</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2012–2026 ESP Hosting</span>
+        <span class="footer-jp" lang="ja">サーバーの静けさ</span>
+        <span class="footer-legal"><a href="#">Оферта</a> · <a href="#">Конфиденциальность</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SELECTION BAR ================= -->
+  <div class="selection-bar" id="selectionBar" aria-live="polite">
+    <div class="container selection-inner">
+      <div class="selection-info">
+        <span class="selection-seal" aria-hidden="true" lang="ja">選</span>
+        <div class="selection-text">
+          <span class="selection-label">Выбран сервер</span>
+          <strong id="barPlanName">—</strong>
+        </div>
+      </div>
+      <div class="selection-specs" id="barSpecs"></div>
+      <div class="selection-price">
+        <strong id="barPrice">—</strong>
+        <small>/ мес</small>
+      </div>
+      <button class="btn btn-primary selection-pay" id="barPay" type="button">
+        <span>Перейти к оплате</span>
+        <span class="btn-arrow" aria-hidden="true">→</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= PAYMENT MODAL ================= -->
+  <div class="modal" id="paymentModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <button class="modal-close" type="button" data-close aria-label="Закрыть окно оплаты">
+        <span></span><span></span>
+      </button>
+
+      <div class="modal-step" data-step="form">
+        <header class="modal-head">
+          <p class="eyebrow"><span class="eyebrow-mark"></span><span lang="ja">支払い</span> · Оплата</p>
+          <h2 id="modalTitle">Оформление заказа</h2>
+        </header>
+
+        <div class="order-summary">
+          <div class="order-plan">
+            <span class="order-kanji" aria-hidden="true" lang="ja" id="orderKanji">天</span>
+            <div>
+              <strong id="orderName">Tengu</strong>
+              <span id="orderSpecs">8 ядер · 32 ГБ · 2×1 ТБ NVMe</span>
+            </div>
+          </div>
+          <div class="order-price">
+            <strong id="orderPrice">24 900 ₽</strong>
+            <small>в месяц</small>
+          </div>
+        </div>
+
+        <div class="pay-methods" role="tablist" aria-label="Способ оплаты">
+          <button class="pay-method is-active" role="tab" type="button" aria-selected="true" data-method="card">Карта</button>
+          <button class="pay-method" role="tab" type="button" aria-selected="false" data-method="sbp">СБП</button>
+          <button class="pay-method" role="tab" type="button" aria-selected="false" data-method="crypto">Крипта</button>
+        </div>
+
+        <!-- CARD -->
+        <form class="method-panel" data-method-panel="card" id="paymentForm" novalidate>
+          <label class="field">
+            <span>Номер карты</span>
+            <input id="cardNumber" type="text" inputmode="numeric" autocomplete="off" placeholder="0000 0000 0000 0000" maxlength="19">
+          </label>
+
+          <div class="form-row">
+            <label class="field">
+              <span>Срок действия</span>
+              <input id="cardExp" type="text" inputmode="numeric" autocomplete="off" placeholder="ММ / ГГ" maxlength="7">
+            </label>
+            <label class="field">
+              <span>CVC</span>
+              <input id="cardCvc" type="text" inputmode="numeric" autocomplete="off" placeholder="•••" maxlength="4">
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Имя на карте</span>
+            <input id="cardName" type="text" autocomplete="off" placeholder="IVAN IVANOV">
+          </label>
+
+          <p class="form-error" id="formError" role="alert"></p>
+
+          <button class="btn btn-primary btn-block pay-submit" type="submit" id="cardSubmit">
+            <span class="btn-label" id="payLabel">Оплатить 24 900 ₽</span>
+          </button>
+
+          <p class="secure-note"><span aria-hidden="true">静</span> Демо-интерфейс: введите любые данные — реальные списания не производятся.</p>
+        </form>
+
+        <!-- SBP -->
+        <div class="method-panel" data-method-panel="sbp" hidden>
+          <div class="sbp-box">
+            <div class="qr" id="qr" aria-label="QR-код для оплаты через СБП"></div>
+            <div class="sbp-text">
+              <strong>Отсканируйте QR-код</strong>
+              <p>Откройте приложение банка и подтвердите платёж. Счёт действует 10 минут.</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block pay-now" type="button">
+            <span class="btn-label">Я оплатил</span>
+          </button>
+          <p class="secure-note"><span aria-hidden="true">静</span> Демо-интерфейс: реальный платёж не создаётся.</p>
+        </div>
+
+        <!-- CRYPTO -->
+        <div class="method-panel" data-method-panel="crypto" hidden>
+          <div class="crypto-list" role="radiogroup" aria-label="Криптовалюта">
+            <button class="crypto-item is-active" type="button" role="radio" aria-checked="true" data-coin="BTC">
+              <span class="crypto-symbol">₿</span>
+              <span>Bitcoin<small>BTC · сеть Bitcoin</small></span>
+            </button>
+            <button class="crypto-item" type="button" role="radio" aria-checked="false" data-coin="ETH">
+              <span class="crypto-symbol">Ξ</span>
+              <span>Ethereum<small>ETH · сеть ERC-20</small></span>
+            </button>
+            <button class="crypto-item" type="button" role="radio" aria-checked="false" data-coin="USDT">
+              <span class="crypto-symbol">₮</span>
+              <span>Tether<small>USDT · сеть TRC-20</small></span>
+            </button>
+          </div>
+          <div class="wallet">
+            <span>Адрес кошелька</span>
+            <code id="walletAddress">bc1q-esp-hosting-0x71f2</code>
+          </div>
+          <button class="btn btn-primary btn-block pay-now" type="button">
+            <span class="btn-label">Я оплатил</span>
+          </button>
+          <p class="secure-note"><span aria-hidden="true">静</span> Демо-интерфейс: реальный платёж не создаётся.</p>
+        </div>
+      </div>
+
+      <!-- SUCCESS -->
+      <div class="modal-step modal-success" data-step="success" hidden>
+        <div class="hanko" aria-hidden="true" lang="ja">完了</div>
+        <h2>Оплата прошла</h2>
+        <p>Сервер <strong id="successPlan">Tengu</strong> уже готовится к запуску. Доступы и чек мы отправили на вашу почту.</p>
+        <p class="order-no" id="orderNo">Заказ № ESP-2026-0000</p>
+        <button class="btn btn-primary" type="button" data-close>Готово</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
